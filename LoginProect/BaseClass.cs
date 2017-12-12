@@ -13,7 +13,6 @@ namespace LoginProect
         /// <summary>加密</summary>
         public static string EncodeCode(string str)
         {
-            string a = string.Empty;
             string key = "david.yc";
             DESCryptoServiceProvider provider = new DESCryptoServiceProvider();
             provider.Key = Encoding.ASCII.GetBytes(key.Substring(0, 8));
